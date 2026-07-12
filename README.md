@@ -20,20 +20,15 @@
 
 <div align="center">
 
-<table>
-<tr>
-<td valign="top" width="60%">
+![Terminal](./assets/terminal.svg)
 
-<img src="./assets/terminal.svg" width="100%"/>
+</div>
 
-</td>
-<td valign="top" width="40%" align="center">
+<br/>
 
-<img src="./assets/animation/rimuru.gif" width="280"/>
+<div align="center">
 
-</td>
-</tr>
-</table>
+<img src="./assets/animation/rimuru.gif" width="300" style="border-radius:12px; border: 2px solid #7c3aed; box-shadow: 0 0 20px #7c3aed;"/>
 
 </div>
 
@@ -67,7 +62,7 @@
 # 📈 Contribution Graph
 
 <p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=draconik514&theme=tokyo-night&hide_border=true"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=draconik514&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=7c3aed&line=00e5ff&point=a855f7&area=true&area_color=7c3aed"/>
 </p>
 
 ![Divider](./assets/divider.svg)
@@ -76,7 +71,7 @@
 
 <div align="center">
 
-<img src="./assets/animation/snake-dark.svg" width="100%"/>
+<img src="https://raw.githubusercontent.com/draconik514/draconik514/main/assets/animation/snake-dark.svg" width="100%"/>
 
 </div>
 
@@ -109,14 +104,11 @@
 
 # 📚 Currently Learning
 
-```text
-████████████████████░░░░ 80%  Golang
-████████████████████░░░░ 80%  React
-████████████████░░░░░░░░ 65%  Docker
-████████████░░░░░░░░░░░░ 50%  PostgreSQL
-████████░░░░░░░░░░░░░░░░ 30%  Kubernetes
-██████░░░░░░░░░░░░░░░░░░ 25%  AWS
-```
+<div align="center">
+
+![Learning](./assets/learning.svg)
+
+</div>
 
 ![Divider](./assets/divider.svg)
 

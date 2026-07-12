@@ -1,0 +1,45 @@
+<svg width="300" height="380" viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00e5ff"/>
+      <stop offset="50%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#00e5ff">
+        <animate attributeName="stop-color" values="#00e5ff;#7c3aed;#00e5ff" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="glowBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="clip">
+      <rect x="10" y="10" width="280" height="340" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <rect width="300" height="380" fill="#0d1117" rx="14"/>
+  <rect width="300" height="380" fill="url(#glowBg)" rx="14"/>
+
+  <!-- GIF -->
+  <image href="./animation/rimuru.gif" x="10" y="10" width="280" height="340"
+    clip-path="url(#clip)" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Border glow -->
+  <rect x="10" y="10" width="280" height="340" fill="none" stroke="url(#borderGrad)"
+    stroke-width="2.5" rx="12" filter="url(#glow)"/>
+
+  <!-- Corner TL -->
+  <polyline points="10,35 10,10 35,10" fill="none" stroke="#00e5ff" stroke-width="3" filter="url(#glow)"/>
+  <!-- Corner TR -->
+  <polyline points="265,10 290,10 290,35" fill="none" stroke="#00e5ff" stroke-width="3" filter="url(#glow)"/>
+  <!-- Corner BL -->
+  <polyline points="10,325 10,350 35,350" fill="none" stroke="#7c3aed" stroke-width="3" filter="url(#glow)"/>
+  <!-- Corner BR -->
+  <polyline points="265,350 290,350 290,325" fill="none" stroke="#7c3aed" stroke-width="3" filter="url(#glow)"/>
+
+  <!-- Outer border -->
+  <rect width="298" height="378" fill="none" stroke="url(#borderGrad)" stroke-width="1" rx="14" opacity="0.4"/>
+</svg>

@@ -22,14 +22,14 @@
 
 <table>
 <tr>
-<td valign="top" width="55%">
+<td valign="top" width="60%">
 
-![Terminal](./assets/terminal.svg)
+<img src="./assets/terminal.svg" width="100%"/>
 
 </td>
-<td valign="top" width="45%" align="center">
+<td valign="top" width="40%" align="center">
 
-![Rimuru](./assets/rimuru-frame.svg)
+<img src="./assets/animation/rimuru.gif" width="280"/>
 
 </td>
 </tr>
@@ -76,7 +76,7 @@
 
 <div align="center">
 
-![Snake Dark](./assets/animation/snake-dark.svg)
+<img src="./assets/animation/snake-dark.svg" width="100%"/>
 
 </div>
 
@@ -85,34 +85,25 @@
 # 🏆 Github Trophy
 
 <p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=draconik514&theme=tokyonight&column=4&margin-w=15&margin-h=15"/>
-</p>
-
-![Divider](./assets/divider.svg)
-
-# 📊 Metrics
-
-<p align="center">
-<img width="49%" src="./metrics/coding.svg"/>
-<img width="49%" src="./metrics/language.svg"/>
-</p>
-<p align="center">
-<img width="49%" src="./metrics/activity.svg"/>
-<img width="49%" src="./metrics/achievements.svg"/>
+<img src="https://github-profile-trophy.vercel.app/?username=draconik514&theme=tokyonight&no-bg=true&no-frame=true&column=4&margin-w=15&margin-h=15"/>
 </p>
 
 ![Divider](./assets/divider.svg)
 
 # 🚀 Featured Projects
 
-| Project | Description |
-|----------|-------------|
-| 🔐 Authentication API | Golang + Gin + JWT |
-| 🍽 QR Cafe Ordering | React + Golang |
-| 🧺 Laundry System | Fullstack Application |
-| 📦 Inventory System | Dashboard + CRUD |
-| 💈 Barbershop Booking | Booking Management |
-| 🌐 Portfolio Website | React + Tailwind |
+<div align="center">
+
+| Project | Description | Tech |
+|---------|-------------|------|
+| 🔐 Authentication API | REST API with auth | Go + Gin + JWT |
+| 🍽 QR Cafe Ordering | QR-based ordering system | React + Golang |
+| 🧺 Laundry System | Fullstack laundry app | Fullstack |
+| 📦 Inventory System | Dashboard + CRUD | JavaScript |
+| 💈 Barbershop Booking | Booking management | JavaScript |
+| 🌐 Portfolio Website | Personal portfolio | React + Tailwind |
+
+</div>
 
 ![Divider](./assets/divider.svg)
 

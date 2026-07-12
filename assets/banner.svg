@@ -1,9 +1,9 @@
 <svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#000000"/>
-      <stop offset="50%" style="stop-color:#00050f"/>
-      <stop offset="100%" style="stop-color:#000000"/>
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="50%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
     </linearGradient>
     <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#00b4ff"/>
@@ -82,7 +82,7 @@
   </circle>
 
   <!-- Border neon -->
-  <rect width="898" height="218" fill="none" stroke="url(#neonGrad)" stroke-width="1.5" rx="12" opacity="0.8"/>
+  <rect width="898" height="218" fill="none" stroke="url(#neonGrad)" stroke-width="2.5" rx="12" opacity="1"/>
 
   <!-- Corner accents -->
   <polyline points="12,45 12,12 45,12" fill="none" stroke="#00b4ff" stroke-width="2.5" filter="url(#glow)"/>

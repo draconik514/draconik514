@@ -17,10 +17,10 @@
   <text x="30" y="38" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700" fill="#00b4ff" filter="url(#glow)" letter-spacing="3">⚔ REPOSITORIES</text>
   <line x1="30" y1="50" x2="870" y2="50" stroke="#00b4ff" stroke-width="0.5" opacity="0.4"/>
 
-  <text x="30" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a" letter-spacing="2">REPO</text>
-  <text x="500" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a" letter-spacing="2">LANG</text>
-  <text x="650" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a" letter-spacing="2">STARS</text>
-  <text x="780" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a" letter-spacing="2">FORKS</text>
+  <text x="30" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#8b949e" letter-spacing="2">REPO</text>
+  <text x="500" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#8b949e" letter-spacing="2">LANG</text>
+  <text x="650" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#8b949e" letter-spacing="2">STARS</text>
+  <text x="780" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#8b949e" letter-spacing="2">FORKS</text>
   <line x1="30" y1="78" x2="870" y2="78" stroke="#00b4ff" stroke-width="0.3" opacity="0.3"/>
 
   <rect x="0" y="82" width="900" height="30" fill="url(#rowGrad)" opacity="0.5"/>
@@ -57,5 +57,5 @@
   <text x="780" y="252" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">🍴 0</text>
 
   <line x1="30" y1="265" x2="870" y2="265" stroke="#00b4ff" stroke-width="0.3" opacity="0.3"/>
-  <text x="30" y="283" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a">Total: 18 repositories</text>
+  <text x="30" y="283" font-family="JetBrains Mono, monospace" font-size="11" fill="#8b949e">Total: 18 repositories</text>
 </svg>

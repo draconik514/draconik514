@@ -19,36 +19,36 @@
   <rect x="30" y="70" width="180" height="90" fill="url(#badgeGrad)" rx="10" stroke="#00b4ff" stroke-width="1" opacity="0.8"/>
   <text x="120" y="105" text-anchor="middle" font-family="serif" font-size="28">🦈</text>
   <text x="120" y="125" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#00b4ff" font-weight="700" filter="url(#glow)">Pull Shark</text>
-  <text x="120" y="142" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#003d7a">×2</text>
+  <text x="120" y="142" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#8b949e">×2</text>
 
   <rect x="230" y="70" width="180" height="90" fill="url(#badgeGrad)" rx="10" stroke="#0066ff" stroke-width="1" opacity="0.8"/>
   <text x="320" y="105" text-anchor="middle" font-family="serif" font-size="28">⚡</text>
   <text x="320" y="125" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#0066ff" font-weight="700" filter="url(#glow)">Quickdraw</text>
-  <text x="320" y="142" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#003d7a">Unlocked</text>
+  <text x="320" y="142" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#8b949e">Unlocked</text>
 
   <rect x="430" y="70" width="180" height="90" fill="url(#badgeGrad)" rx="10" stroke="#00eeff" stroke-width="1" opacity="0.8"/>
   <text x="520" y="105" text-anchor="middle" font-family="serif" font-size="28">🌟</text>
   <text x="520" y="125" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#00eeff" font-weight="700" filter="url(#glow)">Starstruck</text>
-  <text x="520" y="142" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#003d7a">Unlocked</text>
+  <text x="520" y="142" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#8b949e">Unlocked</text>
 
   <rect x="630" y="70" width="180" height="90" fill="url(#badgeGrad)" rx="10" stroke="#00b4ff" stroke-width="1" opacity="0.8"/>
   <text x="720" y="105" text-anchor="middle" font-family="serif" font-size="28">🦅</text>
   <text x="720" y="125" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#00b4ff" font-weight="700" filter="url(#glow)">YOLO</text>
-  <text x="720" y="142" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#003d7a">Unlocked</text>
+  <text x="720" y="142" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="#8b949e">Unlocked</text>
 
   <line x1="30" y1="185" x2="870" y2="185" stroke="#00b4ff" stroke-width="0.5" opacity="0.3"/>
 
-  <text x="30" y="215" font-family="JetBrains Mono, monospace" font-size="13" fill="#003d7a">Total Commits</text>
+  <text x="30" y="215" font-family="JetBrains Mono, monospace" font-size="13" fill="#8b949e">Total Commits</text>
   <text x="200" y="215" font-family="JetBrains Mono, monospace" font-size="13" fill="#00b4ff" font-weight="700" filter="url(#glow)">200+</text>
-  <text x="320" y="215" font-family="JetBrains Mono, monospace" font-size="13" fill="#003d7a">Repositories</text>
+  <text x="320" y="215" font-family="JetBrains Mono, monospace" font-size="13" fill="#8b949e">Repositories</text>
   <text x="470" y="215" font-family="JetBrains Mono, monospace" font-size="13" fill="#0066ff" font-weight="700" filter="url(#glow)">18</text>
-  <text x="560" y="215" font-family="JetBrains Mono, monospace" font-size="13" fill="#003d7a">Stars Earned</text>
+  <text x="560" y="215" font-family="JetBrains Mono, monospace" font-size="13" fill="#8b949e">Stars Earned</text>
   <text x="710" y="215" font-family="JetBrains Mono, monospace" font-size="13" fill="#00b4ff" font-weight="700" filter="url(#glow)">10+</text>
 
-  <text x="30" y="255" font-family="JetBrains Mono, monospace" font-size="13" fill="#003d7a">Followers</text>
+  <text x="30" y="255" font-family="JetBrains Mono, monospace" font-size="13" fill="#8b949e">Followers</text>
   <text x="150" y="255" font-family="JetBrains Mono, monospace" font-size="13" fill="#00eeff" font-weight="700" filter="url(#glow)">Growing...</text>
-  <text x="320" y="255" font-family="JetBrains Mono, monospace" font-size="13" fill="#003d7a">PRs Merged</text>
+  <text x="320" y="255" font-family="JetBrains Mono, monospace" font-size="13" fill="#8b949e">PRs Merged</text>
   <text x="470" y="255" font-family="JetBrains Mono, monospace" font-size="13" fill="#00b4ff" font-weight="700" filter="url(#glow)">15+</text>
-  <text x="560" y="255" font-family="JetBrains Mono, monospace" font-size="13" fill="#003d7a">Issues Closed</text>
+  <text x="560" y="255" font-family="JetBrains Mono, monospace" font-size="13" fill="#8b949e">Issues Closed</text>
   <text x="720" y="255" font-family="JetBrains Mono, monospace" font-size="13" fill="#0066ff" font-weight="700" filter="url(#glow)">20+</text>
 </svg>

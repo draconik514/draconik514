@@ -11,54 +11,67 @@
   </defs>
 
   <rect width="900" height="280" fill="url(#bg)" rx="12"/>
-  <rect width="900" height="280" fill="none" stroke="#00b4ff" stroke-width="2" rx="12" opacity="0.9"/>
+  <rect width="900" height="280" fill="none" stroke="#00b4ff" stroke-width="2" rx="12" opacity="0.8"/>
 
   <!-- Title bar -->
-  <rect width="900" height="40" fill="#0d1117" rx="12"/>
-  <rect width="900" height="20" y="20" fill="#0d1117"/>
-  <line x1="0" y1="40" x2="900" y2="40" stroke="#00b4ff" stroke-width="0.5" opacity="0.3"/>
+  <rect width="900" height="40" fill="#161b22" rx="12"/>
+  <rect width="900" height="20" y="20" fill="#161b22"/>
+  <line x1="0" y1="40" x2="900" y2="40" stroke="#30363d" stroke-width="1"/>
 
-  <!-- Traffic lights -->
-  <circle cx="28" cy="20" r="7" fill="#00b4ff" filter="url(#glow)"/>
-  <circle cx="52" cy="20" r="7" fill="#0066ff"/>
-  <circle cx="76" cy="20" r="7" fill="#003d7a"/>
+  <!-- Traffic lights — merah, kuning, hijau (klasik terminal) -->
+  <circle cx="28" cy="20" r="7" fill="#ff5f57" filter="url(#glow)"/>
+  <circle cx="52" cy="20" r="7" fill="#febc2e" filter="url(#glow)"/>
+  <circle cx="76" cy="20" r="7" fill="#28c840" filter="url(#glow)"/>
 
-  <!-- Title -->
-  <text x="450" y="25" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#003d7a" letter-spacing="2">
+  <!-- Title bar text -->
+  <text x="450" y="25" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#8b949e" letter-spacing="2">
     draconik514 — /bin/dark
   </text>
 
   <!-- Prompt 1 -->
-  <text x="30" y="75" font-family="JetBrains Mono, monospace" font-size="13" fill="#00b4ff" filter="url(#glow)">draconik514</text>
-  <text x="138" y="75" font-family="JetBrains Mono, monospace" font-size="13" fill="#003d7a">@github</text>
-  <text x="210" y="75" font-family="JetBrains Mono, monospace" font-size="13" fill="#0066ff"> ~ $</text>
-  <text x="250" y="75" font-family="JetBrains Mono, monospace" font-size="13" fill="#c0c0c0"> whoami</text>
+  <!-- username: cyan neon -->
+  <text x="30" y="75" font-family="JetBrains Mono, monospace" font-size="13" fill="#00eeff" filter="url(#glow)">draconik514</text>
+  <!-- @github: ungu -->
+  <text x="138" y="75" font-family="JetBrains Mono, monospace" font-size="13" fill="#bf00ff">@github</text>
+  <!-- ~ $: emas -->
+  <text x="210" y="75" font-family="JetBrains Mono, monospace" font-size="13" fill="#ffd700"> ~ $</text>
+  <!-- command: putih -->
+  <text x="250" y="75" font-family="JetBrains Mono, monospace" font-size="13" fill="#e6edf3"> whoami</text>
 
-  <text x="30" y="100" font-family="JetBrains Mono, monospace" font-size="13" fill="#00eeff" filter="url(#glow)">
+  <!-- Output: hijau neon -->
+  <text x="30" y="100" font-family="JetBrains Mono, monospace" font-size="13" fill="#00ff88" filter="url(#glow)">
     ⚡ Abubakar Siddiq | Fullstack Developer | Indonesia 🇮🇩
   </text>
 
   <!-- Prompt 2 -->
-  <text x="30" y="128" font-family="JetBrains Mono, monospace" font-size="13" fill="#00b4ff" filter="url(#glow)">draconik514</text>
-  <text x="138" y="128" font-family="JetBrains Mono, monospace" font-size="13" fill="#003d7a">@github</text>
-  <text x="210" y="128" font-family="JetBrains Mono, monospace" font-size="13" fill="#0066ff"> ~ $</text>
-  <text x="250" y="128" font-family="JetBrains Mono, monospace" font-size="13" fill="#c0c0c0"> cat skills.txt</text>
+  <text x="30" y="128" font-family="JetBrains Mono, monospace" font-size="13" fill="#00eeff" filter="url(#glow)">draconik514</text>
+  <text x="138" y="128" font-family="JetBrains Mono, monospace" font-size="13" fill="#bf00ff">@github</text>
+  <text x="210" y="128" font-family="JetBrains Mono, monospace" font-size="13" fill="#ffd700"> ~ $</text>
+  <text x="250" y="128" font-family="JetBrains Mono, monospace" font-size="13" fill="#e6edf3"> cat skills.txt</text>
 
-  <!-- Skills -->
-  <text x="30" y="155" font-family="JetBrains Mono, monospace" font-size="12" fill="#00b4ff" filter="url(#glow)">Backend  :</text>
-  <text x="120" y="155" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0"> Go · Gin · REST API · JWT · GORM</text>
-  <text x="30" y="175" font-family="JetBrains Mono, monospace" font-size="12" fill="#00b4ff" filter="url(#glow)">Frontend :</text>
-  <text x="120" y="175" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0"> React · Tailwind CSS · JavaScript</text>
-  <text x="30" y="195" font-family="JetBrains Mono, monospace" font-size="12" fill="#00b4ff" filter="url(#glow)">Database :</text>
-  <text x="120" y="195" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0"> MySQL · PostgreSQL</text>
-  <text x="30" y="215" font-family="JetBrains Mono, monospace" font-size="12" fill="#00b4ff" filter="url(#glow)">Tools    :</text>
-  <text x="120" y="215" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0"> Docker · Git · Linux · VS Code</text>
+  <!-- Skills — label warna beda tiap kategori -->
+  <!-- Backend: cyan -->
+  <text x="30" y="155" font-family="JetBrains Mono, monospace" font-size="12" fill="#00eeff" filter="url(#glow)">Backend  :</text>
+  <text x="120" y="155" font-family="JetBrains Mono, monospace" font-size="12" fill="#e6edf3"> Go · Gin · REST API · JWT · GORM</text>
+
+  <!-- Frontend: ungu -->
+  <text x="30" y="175" font-family="JetBrains Mono, monospace" font-size="12" fill="#bf00ff" filter="url(#glow)">Frontend :</text>
+  <text x="120" y="175" font-family="JetBrains Mono, monospace" font-size="12" fill="#e6edf3"> React · Tailwind CSS · JavaScript</text>
+
+  <!-- Database: emas -->
+  <text x="30" y="195" font-family="JetBrains Mono, monospace" font-size="12" fill="#ffd700" filter="url(#glow)">Database :</text>
+  <text x="120" y="195" font-family="JetBrains Mono, monospace" font-size="12" fill="#e6edf3"> MySQL · PostgreSQL</text>
+
+  <!-- Tools: hijau neon -->
+  <text x="30" y="215" font-family="JetBrains Mono, monospace" font-size="12" fill="#00ff88" filter="url(#glow)">Tools    :</text>
+  <text x="120" y="215" font-family="JetBrains Mono, monospace" font-size="12" fill="#e6edf3"> Docker · Git · Linux · VS Code</text>
 
   <!-- Prompt 3 cursor -->
-  <text x="30" y="250" font-family="JetBrains Mono, monospace" font-size="13" fill="#00b4ff" filter="url(#glow)">draconik514</text>
-  <text x="138" y="250" font-family="JetBrains Mono, monospace" font-size="13" fill="#003d7a">@github</text>
-  <text x="210" y="250" font-family="JetBrains Mono, monospace" font-size="13" fill="#0066ff"> ~ $</text>
-  <text x="250" y="250" font-family="JetBrains Mono, monospace" font-size="13" fill="#00eeff" filter="url(#glow)">
+  <text x="30" y="250" font-family="JetBrains Mono, monospace" font-size="13" fill="#00eeff" filter="url(#glow)">draconik514</text>
+  <text x="138" y="250" font-family="JetBrains Mono, monospace" font-size="13" fill="#bf00ff">@github</text>
+  <text x="210" y="250" font-family="JetBrains Mono, monospace" font-size="13" fill="#ffd700"> ~ $</text>
+  <!-- cursor: oranye -->
+  <text x="250" y="250" font-family="JetBrains Mono, monospace" font-size="13" fill="#ff6b35" filter="url(#glow)">
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>█
   </text>
 </svg>

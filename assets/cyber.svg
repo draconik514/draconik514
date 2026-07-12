@@ -4,15 +4,18 @@
       <stop offset="0%" style="stop-color:#0d1117"/>
       <stop offset="100%" style="stop-color:#0d1117"/>
     </linearGradient>
-    <linearGradient id="neonText" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00b4ff"/>
-      <stop offset="50%" style="stop-color:#00eeff">
-        <animate attributeName="stop-color" values="#00eeff;#00b4ff;#0066ff;#00eeff" dur="2.5s" repeatCount="indefinite"/>
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00eeff"/>
+      <stop offset="33%" style="stop-color:#bf00ff">
+        <animate attributeName="stop-color" values="#bf00ff;#ffd700;#00eeff;#bf00ff" dur="3s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" style="stop-color:#00b4ff"/>
+      <stop offset="66%" style="stop-color:#ffd700">
+        <animate attributeName="stop-color" values="#ffd700;#00eeff;#bf00ff;#ffd700" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#00eeff"/>
     </linearGradient>
     <radialGradient id="centerGlow" cx="50%" cy="75%" r="50%">
-      <stop offset="0%" style="stop-color:#0066ff;stop-opacity:0.2"/>
+      <stop offset="0%" style="stop-color:#bf00ff;stop-opacity:0.18"/>
       <stop offset="100%" style="stop-color:#0066ff;stop-opacity:0"/>
     </radialGradient>
     <filter id="glow">
@@ -29,8 +32,8 @@
   <rect width="900" height="180" fill="url(#bg)" rx="12"/>
   <rect width="900" height="180" fill="url(#centerGlow)" rx="12"/>
 
-  <!-- Perspective grid -->
-  <g clip-path="url(#clip)" stroke="#00b4ff" stroke-width="0.5" opacity="0.1">
+  <!-- Perspective grid ungu -->
+  <g clip-path="url(#clip)" stroke="#bf00ff" stroke-width="0.5" opacity="0.1">
     <line x1="450" y1="180" x2="0" y2="90"/><line x1="450" y1="180" x2="90" y2="90"/>
     <line x1="450" y1="180" x2="180" y2="90"/><line x1="450" y1="180" x2="270" y2="90"/>
     <line x1="450" y1="180" x2="360" y2="90"/><line x1="450" y1="180" x2="450" y2="90"/>
@@ -41,38 +44,39 @@
     <line x1="0" y1="148" x2="900" y2="148"/><line x1="0" y1="166" x2="900" y2="166"/>
   </g>
 
-  <!-- Scan line -->
-  <rect x="0" y="0" width="900" height="3" fill="#00b4ff" opacity="0.18" clip-path="url(#clip)">
+  <!-- Scan line cyan -->
+  <rect x="0" y="0" width="900" height="3" fill="#00eeff" opacity="0.15" clip-path="url(#clip)">
     <animate attributeName="y" values="0;180;0" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.18;0.03;0.18" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.03;0.15" dur="3s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Shadow text -->
+  <!-- Shadow -->
   <text x="452" y="88" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="36" font-weight="700"
-    fill="#00b4ff" opacity="0.2" filter="url(#glow2)" letter-spacing="10">DRACONIK514</text>
+    fill="#bf00ff" opacity="0.2" filter="url(#glow2)" letter-spacing="10">DRACONIK514</text>
 
-  <!-- Main text -->
+  <!-- Main text colorful -->
   <text x="450" y="86" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="36" font-weight="700"
-    fill="url(#neonText)" filter="url(#glow)" letter-spacing="10">DRACONIK514</text>
+    fill="url(#nameGrad)" filter="url(#glow)" letter-spacing="10">DRACONIK514</text>
 
-  <!-- Sub -->
+  <!-- Sub warna emas -->
   <text x="450" y="118" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12"
-    fill="#003d7a" letter-spacing="8" filter="url(#glow)">FULLSTACK  DEVELOPER</text>
+    fill="#ffd700" letter-spacing="8" opacity="0.8">FULLSTACK  DEVELOPER</text>
 
-  <!-- Side lines -->
-  <line x1="30" y1="86" x2="185" y2="86" stroke="#00b4ff" stroke-width="1.5" opacity="0.6" filter="url(#glow)"/>
-  <line x1="715" y1="86" x2="870" y2="86" stroke="#00b4ff" stroke-width="1.5" opacity="0.6" filter="url(#glow)"/>
-  <line x1="55" y1="118" x2="175" y2="118" stroke="#0066ff" stroke-width="1" opacity="0.5"/>
-  <line x1="725" y1="118" x2="845" y2="118" stroke="#0066ff" stroke-width="1" opacity="0.5"/>
+  <!-- Side lines — kiri cyan, kanan emas -->
+  <line x1="30" y1="86" x2="185" y2="86" stroke="#00eeff" stroke-width="1.5" opacity="0.7" filter="url(#glow)"/>
+  <line x1="715" y1="86" x2="870" y2="86" stroke="#ffd700" stroke-width="1.5" opacity="0.7" filter="url(#glow)"/>
+  <line x1="55" y1="118" x2="175" y2="118" stroke="#bf00ff" stroke-width="1" opacity="0.6"/>
+  <line x1="725" y1="118" x2="845" y2="118" stroke="#00ff88" stroke-width="1" opacity="0.6"/>
 
-  <!-- Triangle accents -->
-  <polygon points="18,86 30,79 30,93" fill="#00b4ff" opacity="0.9" filter="url(#glow)"/>
-  <polygon points="882,86 870,79 870,93" fill="#00b4ff" opacity="0.9" filter="url(#glow)"/>
+  <!-- Triangle accents — kiri ungu, kanan emas -->
+  <polygon points="18,86 30,79 30,93" fill="#bf00ff" opacity="0.9" filter="url(#glow)"/>
+  <polygon points="882,86 870,79 870,93" fill="#ffd700" opacity="0.9" filter="url(#glow)"/>
 
   <!-- Border -->
-  <rect width="898" height="178" fill="none" stroke="url(#neonText)" stroke-width="2.5" rx="12" opacity="1"/>
-  <polyline points="12,40 12,12 40,12" fill="none" stroke="#00b4ff" stroke-width="2.5" filter="url(#glow)"/>
-  <polyline points="860,12 888,12 888,40" fill="none" stroke="#00b4ff" stroke-width="2.5" filter="url(#glow)"/>
-  <polyline points="12,140 12,168 40,168" fill="none" stroke="#0066ff" stroke-width="2.5" filter="url(#glow)"/>
-  <polyline points="860,168 888,168 888,140" fill="none" stroke="#0066ff" stroke-width="2.5" filter="url(#glow)"/>
+  <rect width="898" height="178" fill="none" stroke="url(#nameGrad)" stroke-width="2" rx="12" opacity="0.8"/>
+  <!-- Corner — tiap sudut warna beda -->
+  <polyline points="12,40 12,12 40,12" fill="none" stroke="#ffd700" stroke-width="2.5" filter="url(#glow)"/>
+  <polyline points="860,12 888,12 888,40" fill="none" stroke="#00eeff" stroke-width="2.5" filter="url(#glow)"/>
+  <polyline points="12,140 12,168 40,168" fill="none" stroke="#bf00ff" stroke-width="2.5" filter="url(#glow)"/>
+  <polyline points="860,168 888,168 888,140" fill="none" stroke="#00ff88" stroke-width="2.5" filter="url(#glow)"/>
 </svg>

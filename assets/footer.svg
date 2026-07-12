@@ -2,14 +2,21 @@
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="50%" style="stop-color:#0d1117"/>
       <stop offset="100%" style="stop-color:#0d1117"/>
     </linearGradient>
     <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00b4ff;stop-opacity:0"/>
-      <stop offset="30%" style="stop-color:#00b4ff;stop-opacity:0.8"/>
-      <stop offset="70%" style="stop-color:#0066ff;stop-opacity:0.8"/>
-      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:0"/>
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0"/>
+      <stop offset="25%" style="stop-color:#bf00ff;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#00eeff;stop-opacity:0.8"/>
+      <stop offset="75%" style="stop-color:#00ff88;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="50%" style="stop-color:#00eeff">
+        <animate attributeName="stop-color" values="#00eeff;#bf00ff;#ffd700;#00eeff" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#00ff88"/>
     </linearGradient>
     <filter id="glow">
       <feGaussianBlur stdDeviation="3" result="blur"/>
@@ -19,35 +26,42 @@
 
   <rect width="900" height="120" fill="url(#bg)" rx="12"/>
 
-  <!-- Wave -->
-  <path d="M0,35 Q225,5 450,35 Q675,65 900,35 L900,0 L0,0 Z" fill="#00b4ff" opacity="0.04"/>
+  <!-- Wave colorful -->
+  <path d="M0,35 Q225,5 450,35 Q675,65 900,35 L900,0 L0,0 Z" fill="#bf00ff" opacity="0.04"/>
   <path d="M0,35 Q225,5 450,35 Q675,65 900,35" fill="none" stroke="url(#waveGrad)" stroke-width="1.5">
     <animate attributeName="d"
       values="M0,35 Q225,5 450,35 Q675,65 900,35;M0,35 Q225,65 450,35 Q675,5 900,35;M0,35 Q225,5 450,35 Q675,65 900,35"
       dur="4s" repeatCount="indefinite"/>
   </path>
 
-  <!-- Particles -->
-  <circle cx="200" cy="110" r="2" fill="#00b4ff" filter="url(#glow)">
+  <!-- Particles colorful -->
+  <circle cx="150" cy="110" r="2" fill="#ffd700" filter="url(#glow)">
     <animate attributeName="cy" values="110;60;110" dur="2.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.8;0;0.8" dur="2.5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="450" cy="115" r="2.5" fill="#00eeff" filter="url(#glow)">
+  <circle cx="350" cy="115" r="2" fill="#bf00ff" filter="url(#glow)">
     <animate attributeName="cy" values="115;55;115" dur="3s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.9;0;0.9" dur="3s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="700" cy="108" r="2" fill="#0066ff" filter="url(#glow)">
-    <animate attributeName="cy" values="108;58;108" dur="2.8s" repeatCount="indefinite"/>
+  <circle cx="550" cy="112" r="2.5" fill="#00eeff" filter="url(#glow)">
+    <animate attributeName="cy" values="112;52;112" dur="2.8s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.7;0;0.7" dur="2.8s" repeatCount="indefinite"/>
   </circle>
+  <circle cx="750" cy="108" r="2" fill="#00ff88" filter="url(#glow)">
+    <animate attributeName="cy" values="108;58;108" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
 
+  <!-- Main text gradient colorful -->
   <text x="450" y="68" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700"
-    fill="#00b4ff" filter="url(#glow)" letter-spacing="3">
+    fill="url(#textGrad)" filter="url(#glow)" letter-spacing="3">
     ⚡ Code in Darkness. Rise in Power. ⚡
   </text>
-  <text x="450" y="95" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a" letter-spacing="1">
+  <!-- Copyright: abu -->
+  <text x="450" y="95" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#8b949e" letter-spacing="1">
     © 2025 Abubakar Siddiq • draconik514
   </text>
 
-  <rect width="898" height="118" fill="none" stroke="#00b4ff" stroke-width="2" rx="12" opacity="0.8"/>
+  <!-- Border colorful -->
+  <rect width="898" height="118" fill="none" stroke="url(#waveGrad)" stroke-width="1.5" rx="12" opacity="0.7"/>
 </svg>

@@ -1,11 +1,5 @@
 <div align="center">
 
-![Background](./assets/background.svg)
-
-</div>
-
-<div align="center">
-
 ![Banner](./assets/banner.svg)
 
 <img src="https://komarev.com/ghpvc/?username=draconik514&style=for-the-badge&color=00b4ff"/>

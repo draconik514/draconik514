@@ -1,15 +1,15 @@
 <svg width="900" height="120" viewBox="0 0 900 120" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="50%" style="stop-color:#0a0e1a"/>
-      <stop offset="100%" style="stop-color:#0d1117"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#000000"/>
+      <stop offset="50%" style="stop-color:#0a0000"/>
+      <stop offset="100%" style="stop-color:#000000"/>
     </linearGradient>
-    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00e5ff;stop-opacity:0"/>
-      <stop offset="30%" style="stop-color:#00e5ff;stop-opacity:0.8"/>
-      <stop offset="70%" style="stop-color:#7c3aed;stop-opacity:0.8"/>
-      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0"/>
+    <linearGradient id="fireWave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#ff0000;stop-opacity:0.8"/>
+      <stop offset="70%" style="stop-color:#ff4500;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#ff4500;stop-opacity:0"/>
     </linearGradient>
     <filter id="glow">
       <feGaussianBlur stdDeviation="3" result="blur"/>
@@ -17,25 +17,39 @@
     </filter>
   </defs>
 
-  <rect width="900" height="120" fill="url(#footerBg)" rx="12"/>
+  <rect width="900" height="120" fill="url(#bg)" rx="12"/>
 
-  <!-- Wave top -->
-  <path d="M0,30 Q225,0 450,30 Q675,60 900,30 L900,0 L0,0 Z" fill="#00e5ff" opacity="0.05"/>
-  <path d="M0,30 Q225,0 450,30 Q675,60 900,30" fill="none" stroke="url(#waveGrad)" stroke-width="1.5">
+  <!-- Fire wave -->
+  <path d="M0,35 Q225,5 450,35 Q675,65 900,35 L900,0 L0,0 Z" fill="#ff0000" opacity="0.04"/>
+  <path d="M0,35 Q225,5 450,35 Q675,65 900,35" fill="none" stroke="url(#fireWave)" stroke-width="1.5">
     <animate attributeName="d"
-      values="M0,30 Q225,0 450,30 Q675,60 900,30;M0,30 Q225,60 450,30 Q675,0 900,30;M0,30 Q225,0 450,30 Q675,60 900,30"
-      dur="5s" repeatCount="indefinite"/>
+      values="M0,35 Q225,5 450,35 Q675,65 900,35;M0,35 Q225,65 450,35 Q675,5 900,35;M0,35 Q225,5 450,35 Q675,65 900,35"
+      dur="4s" repeatCount="indefinite"/>
   </path>
 
+  <!-- Fire particles bottom -->
+  <circle cx="200" cy="110" r="2" fill="#ff4500" filter="url(#glow)">
+    <animate attributeName="cy" values="110;60;110" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="115" r="2.5" fill="#ff0000" filter="url(#glow)">
+    <animate attributeName="cy" values="115;55;115" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0;0.9" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="108" r="2" fill="#ff4500" filter="url(#glow)">
+    <animate attributeName="cy" values="108;58;108" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+
   <!-- Text -->
-  <text x="450" y="65" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700"
-    fill="#00e5ff" filter="url(#glow)" letter-spacing="3">
-    💻 Code. Learn. Build. Repeat.
+  <text x="450" y="68" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="16" font-weight="700"
+    fill="#ff0000" filter="url(#glow)" letter-spacing="3">
+    ⚔ Code in Darkness. Rise in Power. ⚔
   </text>
-  <text x="450" y="92" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#4a5568" letter-spacing="1">
+  <text x="450" y="95" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="#3d0000" letter-spacing="1">
     © 2025 Abubakar Siddiq • draconik514
   </text>
 
   <!-- Border -->
-  <rect width="898" height="118" fill="none" stroke="#00e5ff" stroke-width="1" rx="12" opacity="0.2"/>
+  <rect width="898" height="118" fill="none" stroke="#ff0000" stroke-width="1" rx="12" opacity="0.25"/>
 </svg>

@@ -24,11 +24,7 @@
 <br/>
 
 <table border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td bgcolor="#ffd700" width="3"></td>
-<td>
-<table border="0" cellpadding="0" cellspacing="0">
-<tr><td bgcolor="#ffd700" height="3" width="306"></td></tr>
+<tr><td bgcolor="#ffd700" height="3" width="312"></td></tr>
 <tr>
 <td bgcolor="#ffd700" width="3"></td>
 <td bgcolor="#0d1117" align="center" style="padding:6px;">
@@ -36,11 +32,7 @@
 </td>
 <td bgcolor="#bf00ff" width="3"></td>
 </tr>
-<tr><td bgcolor="#00eeff" height="3" width="306"></td></tr>
-</table>
-</td>
-<td bgcolor="#00ff88" width="3"></td>
-</tr>
+<tr><td bgcolor="#00eeff" height="3" width="312"></td></tr>
 </table>
 
 </td></tr>

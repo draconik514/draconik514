@@ -1,40 +1,24 @@
-<svg width="900" height="40" viewBox="0 0 900 40" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="20" viewBox="0 0 900 20" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:0"/>
-      <stop offset="15%" style="stop-color:#ffd700;stop-opacity:1"/>
-      <stop offset="35%" style="stop-color:#bf00ff;stop-opacity:1">
-        <animate attributeName="stop-color" values="#bf00ff;#00eeff;#ffd700;#bf00ff" dur="3s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" style="stop-color:#00eeff;stop-opacity:1"/>
-      <stop offset="65%" style="stop-color:#00ff88;stop-opacity:1">
-        <animate attributeName="stop-color" values="#00ff88;#ffd700;#bf00ff;#00ff88" dur="3s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="85%" style="stop-color:#ff6b35;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:0"/>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ffd700" stop-opacity="0"/>
+      <stop offset="15%"  stop-color="#ffd700"/>
+      <stop offset="35%"  stop-color="#bf00ff"/>
+      <stop offset="50%"  stop-color="#00eeff"/>
+      <stop offset="65%"  stop-color="#00ff88"/>
+      <stop offset="85%"  stop-color="#ff6b35"/>
+      <stop offset="100%" stop-color="#ff6b35" stop-opacity="0"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
-
-  <rect width="900" height="40" fill="#0d1117"/>
-  <line x1="0" y1="20" x2="900" y2="20" stroke="url(#divGrad)" stroke-width="2" filter="url(#glow)"/>
-
-  <!-- Center diamond — animasi warna -->
-  <polygon points="450,11 460,20 450,29 440,20" fill="#0d1117" stroke="#00eeff" stroke-width="1.5" filter="url(#glow)">
-    <animate attributeName="stroke" values="#00eeff;#bf00ff;#ffd700;#00ff88;#00eeff" dur="3s" repeatCount="indefinite"/>
-  </polygon>
-  <text x="450" y="24" text-anchor="middle" font-family="serif" font-size="9" fill="#00eeff" filter="url(#glow)">
-    ✦<animate attributeName="fill" values="#00eeff;#bf00ff;#ffd700;#00ff88;#00eeff" dur="3s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Side dots — warna warni -->
-  <circle cx="340" cy="20" r="2.5" fill="#bf00ff" filter="url(#glow)"/>
-  <circle cx="560" cy="20" r="2.5" fill="#ffd700" filter="url(#glow)"/>
-  <circle cx="240" cy="20" r="2" fill="#00eeff" opacity="0.8"/>
-  <circle cx="660" cy="20" r="2" fill="#00ff88" opacity="0.8"/>
-  <circle cx="150" cy="20" r="1.5" fill="#ff6b35" opacity="0.6"/>
-  <circle cx="750" cy="20" r="1.5" fill="#ff6b35" opacity="0.6"/>
+  <!-- garis utama pakai rect bukan line agar gradient work -->
+  <rect x="0" y="9" width="900" height="2" fill="url(#g1)"/>
+  <!-- diamond tengah -->
+  <polygon points="450,4 457,10 450,16 443,10" fill="#0d1117" stroke="#00eeff" stroke-width="1.5"/>
+  <!-- dots -->
+  <circle cx="340" cy="10" r="2.5" fill="#bf00ff"/>
+  <circle cx="560" cy="10" r="2.5" fill="#ffd700"/>
+  <circle cx="240" cy="10" r="2"   fill="#00eeff" opacity="0.8"/>
+  <circle cx="660" cy="10" r="2"   fill="#00ff88" opacity="0.8"/>
+  <circle cx="150" cy="10" r="1.5" fill="#ff6b35" opacity="0.6"/>
+  <circle cx="750" cy="10" r="1.5" fill="#ff6b35" opacity="0.6"/>
 </svg>

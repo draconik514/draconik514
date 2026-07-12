@@ -1,0 +1,27 @@
+name: Auto Update Assets
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Verify assets exist
+        run: |
+          echo "Checking assets..."
+          ls -la assets/
+          ls -la metrics/
+
+      - name: Commit if changed
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: auto-update assets"
+          branch: main

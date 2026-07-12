@@ -1,73 +1,61 @@
 <svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#000000"/>
-      <stop offset="100%" style="stop-color:#0a0000"/>
+      <stop offset="0%" style="stop-color:#000000"/><stop offset="100%" style="stop-color:#00050f"/>
     </linearGradient>
     <linearGradient id="rowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#1a0000;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#1a0000;stop-opacity:0"/>
+      <stop offset="0%" style="stop-color:#00050f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00050f;stop-opacity:0"/>
     </linearGradient>
     <filter id="glow">
       <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-
   <rect width="900" height="300" fill="url(#bg)" rx="12"/>
-  <rect width="898" height="298" fill="none" stroke="#ff0000" stroke-width="1" rx="12" opacity="0.3"/>
+  <rect width="898" height="298" fill="none" stroke="#00b4ff" stroke-width="1" rx="12" opacity="0.3"/>
+  <text x="30" y="38" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700" fill="#00b4ff" filter="url(#glow)" letter-spacing="3">⚔ REPOSITORIES</text>
+  <line x1="30" y1="50" x2="870" y2="50" stroke="#00b4ff" stroke-width="0.5" opacity="0.4"/>
 
-  <!-- Header -->
-  <text x="30" y="38" font-family="JetBrains Mono, monospace" font-size="15" font-weight="700"
-    fill="#ff0000" filter="url(#glow)" letter-spacing="3">⚔ REPOSITORIES</text>
-  <line x1="30" y1="50" x2="870" y2="50" stroke="#ff0000" stroke-width="0.5" opacity="0.4"/>
+  <text x="30" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a" letter-spacing="2">REPO</text>
+  <text x="500" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a" letter-spacing="2">LANG</text>
+  <text x="650" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a" letter-spacing="2">STARS</text>
+  <text x="780" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a" letter-spacing="2">FORKS</text>
+  <line x1="30" y1="78" x2="870" y2="78" stroke="#00b4ff" stroke-width="0.3" opacity="0.3"/>
 
-  <!-- Column headers -->
-  <text x="30" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#3d0000" letter-spacing="2">REPO</text>
-  <text x="500" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#3d0000" letter-spacing="2">LANG</text>
-  <text x="650" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#3d0000" letter-spacing="2">STARS</text>
-  <text x="780" y="72" font-family="JetBrains Mono, monospace" font-size="11" fill="#3d0000" letter-spacing="2">FORKS</text>
-  <line x1="30" y1="78" x2="870" y2="78" stroke="#ff0000" stroke-width="0.3" opacity="0.3"/>
-
-  <!-- Row 1 -->
   <rect x="0" y="82" width="900" height="30" fill="url(#rowGrad)" opacity="0.5"/>
-  <text x="30" y="102" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff0000" filter="url(#glow)">rest-api-system</text>
-  <text x="500" y="102" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff4500">Go</text>
+  <text x="30" y="102" font-family="JetBrains Mono, monospace" font-size="12" fill="#00b4ff" filter="url(#glow)">rest-api-system</text>
+  <text x="500" y="102" font-family="JetBrains Mono, monospace" font-size="12" fill="#0066ff">Go</text>
   <text x="650" y="102" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">⭐ 3</text>
   <text x="780" y="102" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">🍴 1</text>
 
-  <!-- Row 2 -->
-  <text x="30" y="132" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff4500">laundry-system</text>
-  <text x="500" y="132" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff6600">JavaScript</text>
+  <text x="30" y="132" font-family="JetBrains Mono, monospace" font-size="12" fill="#0066ff">laundry-system</text>
+  <text x="500" y="132" font-family="JetBrains Mono, monospace" font-size="12" fill="#00eeff">JavaScript</text>
   <text x="650" y="132" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">⭐ 2</text>
   <text x="780" y="132" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">🍴 0</text>
 
-  <!-- Row 3 -->
   <rect x="0" y="142" width="900" height="30" fill="url(#rowGrad)" opacity="0.5"/>
-  <text x="30" y="162" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff0000" filter="url(#glow)">barbershop-booking</text>
-  <text x="500" y="162" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff6600">JavaScript</text>
+  <text x="30" y="162" font-family="JetBrains Mono, monospace" font-size="12" fill="#00b4ff" filter="url(#glow)">barbershop-booking</text>
+  <text x="500" y="162" font-family="JetBrains Mono, monospace" font-size="12" fill="#00eeff">JavaScript</text>
   <text x="650" y="162" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">⭐ 2</text>
   <text x="780" y="162" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">🍴 0</text>
 
-  <!-- Row 4 -->
-  <text x="30" y="192" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff4500">inventory-system</text>
-  <text x="500" y="192" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff6600">JavaScript</text>
+  <text x="30" y="192" font-family="JetBrains Mono, monospace" font-size="12" fill="#0066ff">inventory-system</text>
+  <text x="500" y="192" font-family="JetBrains Mono, monospace" font-size="12" fill="#00eeff">JavaScript</text>
   <text x="650" y="192" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">⭐ 1</text>
   <text x="780" y="192" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">🍴 0</text>
 
-  <!-- Row 5 -->
   <rect x="0" y="202" width="900" height="30" fill="url(#rowGrad)" opacity="0.5"/>
-  <text x="30" y="222" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff0000" filter="url(#glow)">YumninCake</text>
-  <text x="500" y="222" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff6600">JavaScript</text>
+  <text x="30" y="222" font-family="JetBrains Mono, monospace" font-size="12" fill="#00b4ff" filter="url(#glow)">YumninCake</text>
+  <text x="500" y="222" font-family="JetBrains Mono, monospace" font-size="12" fill="#00eeff">JavaScript</text>
   <text x="650" y="222" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">⭐ 1</text>
   <text x="780" y="222" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">🍴 0</text>
 
-  <!-- Row 6 -->
-  <text x="30" y="252" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff4500">produk-gebi</text>
-  <text x="500" y="252" font-family="JetBrains Mono, monospace" font-size="12" fill="#ff6600">JavaScript</text>
+  <text x="30" y="252" font-family="JetBrains Mono, monospace" font-size="12" fill="#0066ff">produk-gebi</text>
+  <text x="500" y="252" font-family="JetBrains Mono, monospace" font-size="12" fill="#00eeff">JavaScript</text>
   <text x="650" y="252" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">⭐ 1</text>
   <text x="780" y="252" font-family="JetBrains Mono, monospace" font-size="12" fill="#c0c0c0">🍴 0</text>
 
-  <line x1="30" y1="265" x2="870" y2="265" stroke="#ff0000" stroke-width="0.3" opacity="0.3"/>
-  <text x="30" y="283" font-family="JetBrains Mono, monospace" font-size="11" fill="#3d0000">Total: 18 repositories</text>
+  <line x1="30" y1="265" x2="870" y2="265" stroke="#00b4ff" stroke-width="0.3" opacity="0.3"/>
+  <text x="30" y="283" font-family="JetBrains Mono, monospace" font-size="11" fill="#003d7a">Total: 18 repositories</text>
 </svg>

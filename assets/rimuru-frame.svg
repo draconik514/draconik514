@@ -1,0 +1,104 @@
+<svg width="320" height="420" viewBox="0 0 320 420" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="frameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00e5ff"/>
+      <stop offset="50%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#00e5ff">
+        <animate attributeName="stop-color" values="#00e5ff;#7c3aed;#00e5ff" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <radialGradient id="glowBg" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="imgClip">
+      <rect x="20" y="50" width="280" height="310" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="320" height="420" fill="url(#bgGrad)" rx="16"/>
+  <rect width="320" height="420" fill="url(#glowBg)" rx="16"/>
+
+  <!-- Grid lines -->
+  <g stroke="#00e5ff" stroke-width="0.3" opacity="0.07">
+    <line x1="0" y1="70" x2="320" y2="70"/>
+    <line x1="0" y1="140" x2="320" y2="140"/>
+    <line x1="0" y1="210" x2="320" y2="210"/>
+    <line x1="0" y1="280" x2="320" y2="280"/>
+    <line x1="0" y1="350" x2="320" y2="350"/>
+    <line x1="80" y1="0" x2="80" y2="420"/>
+    <line x1="160" y1="0" x2="160" y2="420"/>
+    <line x1="240" y1="0" x2="240" y2="420"/>
+  </g>
+
+  <!-- Glow behind image -->
+  <ellipse cx="160" cy="210" rx="120" ry="140" fill="#7c3aed" opacity="0.08" filter="url(#glow2)">
+    <animate attributeName="opacity" values="0.08;0.18;0.08" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- GIF image clipped -->
+  <image href="../animation/rimuru.gif" x="20" y="50" width="280" height="310" clip-path="url(#imgClip)" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Scan line effect -->
+  <rect x="20" y="50" width="280" height="4" fill="#00e5ff" opacity="0.1" clip-path="url(#imgClip)">
+    <animate attributeName="y" values="50;360;50" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.04;0.1" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Frame border animated -->
+  <rect x="20" y="50" width="280" height="310" fill="none" stroke="url(#frameGrad)" stroke-width="2" rx="8" filter="url(#glow)"/>
+
+  <!-- Corner accents top -->
+  <polyline points="20,75 20,50 45,50" fill="none" stroke="#00e5ff" stroke-width="2.5" filter="url(#glow)"/>
+  <polyline points="275,50 300,50 300,75" fill="none" stroke="#00e5ff" stroke-width="2.5" filter="url(#glow)"/>
+  <!-- Corner accents bottom -->
+  <polyline points="20,335 20,360 45,360" fill="none" stroke="#00e5ff" stroke-width="2.5" filter="url(#glow)"/>
+  <polyline points="275,360 300,360 300,335" fill="none" stroke="#00e5ff" stroke-width="2.5" filter="url(#glow)"/>
+
+  <!-- Top label -->
+  <rect x="95" y="38" width="130" height="22" fill="#0d1117" rx="4"/>
+  <text x="160" y="53" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11"
+    fill="#00e5ff" filter="url(#glow)" letter-spacing="2">✦ RIMURU ✦</text>
+
+  <!-- Bottom name plate -->
+  <rect x="20" y="368" width="280" height="42" fill="#0a0e1a" rx="8"/>
+  <rect x="20" y="368" width="280" height="42" fill="none" stroke="url(#frameGrad)" stroke-width="1.5" rx="8"/>
+
+  <text x="160" y="385" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13"
+    font-weight="700" fill="url(#frameGrad)" filter="url(#glow)" letter-spacing="2">
+    Rimuru Tempest
+  </text>
+  <text x="160" y="402" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10"
+    fill="#a0aec0" letter-spacing="1">
+    That Time I Got Reincarnated as a Slime
+  </text>
+
+  <!-- Outer border -->
+  <rect width="318" height="418" fill="none" stroke="url(#frameGrad)" stroke-width="1" rx="16" opacity="0.4"/>
+
+  <!-- Floating particles -->
+  <circle cx="15" cy="100" r="2" fill="#00e5ff" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="cy" values="100;300;100" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="305" cy="200" r="2" fill="#7c3aed" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="cy" values="200;80;200" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="10" cy="320" r="1.5" fill="#7c3aed" opacity="0.5" filter="url(#glow)">
+    <animate attributeName="cy" values="320;150;320" dur="7s" repeatCount="indefinite"/>
+  </circle>
+</svg>

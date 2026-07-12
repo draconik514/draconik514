@@ -20,7 +20,20 @@
 
 <div align="center">
 
+<table>
+<tr>
+<td valign="top" width="55%">
+
 ![Terminal](./assets/terminal.svg)
+
+</td>
+<td valign="top" width="45%" align="center">
+
+![Rimuru](./assets/rimuru-frame.svg)
+
+</td>
+</tr>
+</table>
 
 </div>
 
